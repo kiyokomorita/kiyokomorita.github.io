@@ -4,9 +4,345 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My E-commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- <script>
+        let db = {
+    0:{
+        title:"Baby Lotion",
+        Description:"Lovely Baby Lotion",
+        Price:5,
+        serialNo:123,
+        img:"https://www.sephora.com/productimages/sku/s2489755-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=194"
+
+    },
+    1:{
+        title:"Baby Lotion",
+        Description:"Lovely Baby Lotion",
+        Price:5,
+        serialNo:123
+
+    },
+    2:{
+        title:"Baby Lotion",
+        Description:"Lovely Baby Lotion",
+        Price:5,
+        serialNo:123
+
+    },
+    3:{
+        title:"Baby Lotion",
+        Description:"Lovely Baby Lotion",
+        Price:5,
+        serialNo:123
+
+    }
+
+
+}
+console.log(db)
+    </script> -->
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+          <img class="logo" src="img/logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fal fa-search"></i>
+                <i class="fal fa-shopping-bag"></i>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+          <div class="container">
+              <h5>NEW ARRIVALS</h5>
+              <h1><span>Best Price</span>This Year</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur<br>adipisicing elit. Eaque, reiciendis!</p>
+              <button>Shop Now</button>
+          </div>
+      </section>
+      <section id="brand" class="container">
+        <div class="row md-0 py-5　d-flex align-items-center">
+          <img class="img-fluid col-lg-2 col-md-4 col-6 w-25 h-100 m-2" src="img/brand/Dior.png" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6 w-25 h-100 m-2" src="img/brand/Lancome-logo.png" alt="">
+          <!-- <img class="img-fluid col-lg-2 col-md-4 col-6 w-25 h-100 m-2" src="img/brand/mac.gif" alt=""> -->
+          <img class="img-fluid col-lg-2 col-md-4 col-6 w-25 h-100 m-2" src="img/brand/Sephora-Logo.png" alt="">
+          <img class="img-fluid col-lg-2 col-md-4 col-6"  src="img/brand/shiseido.png" alt="" >
+          <img class="img-fluid col-lg-2 col-md-4 col-6 w-25 h-100 m-2" src="img/brand/clinique.png" alt="">
+        </div>
+
+      </section>
     
+      <section id="new" class="w-100">
+
+          <div class="row p-0 m-0">
+
+              <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="img/new/1.jpg" alt="">
+                <div class="details">
+                      <h2>Rare Item</h2>
+                     <button class="text-uppercase">Shop now</button>
+                </div>
+              </div>
+
+              <div class="one col-lg-4 col-md-12 col-12 p-0">
+                 <img class="img-fluid" src="img/new/2.jpg" alt="">
+                <div class="details">
+                      <h2>Rare Item</h2>
+                      <button class="text-uppercase">Shop now</button>
+                </div>
+              </div>
+              <div class="one col-lg-4 col-md-12 col-12 p-0">
+                  <img class="img-fluid" src="img/new/3.jpg" alt="">
+                <div class="details">
+                      <h2>Rare Item</h2>
+                      <button class="text-uppercase">Shop now</button>
+                </div>
+              </div>
+              
+          
+      </section>
+<section id="featured" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>featured</h3>
+    <hr class="mx-auto">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="banner">
+  <div class="">
+    <h4>SALE</h4>
+    <h1>Autumn Collection</h1>
+    <button class="text-uppercase">Shop Now</button>
+  </div>
+</section>
+
+<section id="popular" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Popular</h3>
+    <hr class="mx-auto">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/popular/qlinique_clean.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/popular/esteelauder.jpeg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/popular/ilialash.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/popular/lamercreme.webp" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Squalane Cleanser</h5>
+      <h4 class="p-price">$7.90</h4>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+  </div>
+</section>
+  <footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <img src="img/logo.png" alt="" width="100px" height="auto">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 class="pb-2">Skin Care</h5>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="#">Cleanser</a></li>
+          <li><a href="#">Moisturizers</a></li>
+          <li><a href="#">Treatments</a></li>
+          <li><a href="#">EyeCare</a></li>
+          
+
+        </ul>
+
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 class="pb-2">Contact Us</h5>
+          <div>
+          <h6 class="text-uppercase">Address</h6>
+          <p>1000 Burrard Street,Vancouver, BC V6Z 2R9 </p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">Phone</h6>
+          <p>(123)456-7890 </p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">Email</h6>
+          <p>kiyoko@aaa.com</p>
+        </div>
+
+      </div>
+
+
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        
+          <div class="row">
+            <img src="img/payment.png" alt="" width="450px" height="auto">
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="sns">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          </div>
+      </div>
+
+
+      <div class="copyright mx-auto">
+       
+            <p>Kiyoko eCommerce &copy; 2021. All Rights Reserved</p>
+          
+      </div>
+  
+    </div>
+  </footer>
+
+     
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 </html>
