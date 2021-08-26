@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 *
 {
     margin:0;
@@ -224,7 +224,7 @@ hr{
 }
 
 .product .buy-btn{
-    background: orange;
+    background: #fb77fb;
     transform: translateY(20px);
     opacity: 0;
     transition: 0.3s all;
@@ -297,12 +297,15 @@ footer p{
     font-size:0.8rem;
 
 }
+
 footer .sns a{
     color:#000;
     width: 38px;
     height:38px;
     background-color: white;
     display:inline-block;
+    /* justify-content: space-between; */
+    /* float: left; */
     
     text-align: center;
     line-height: 38px;
@@ -315,6 +318,8 @@ footer .sns a{
 footer .copyright{
     text-align: center;
     color:white;
+    transition: 0.3s all;
 }
+
 
 

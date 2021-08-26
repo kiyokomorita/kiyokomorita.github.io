@@ -1,0 +1,28 @@
+#inside_holder {
+  z-index: 100;
+}
+#inside_liveChatTab svg {
+  display: block;
+}
+/* notification on desktop */
+#inside_holder[device="1"] #insideChatFrame.notificationMode {
+  width: 440px;
+}
+/* tab & notification on mobile */
+#inside_holder[device="2"]:not(.chatPaneOpen),
+#inside_holder[device="2"] #inside_tabs,
+#inside_holder[device="2"] #insideChatFrame.notificationMode {
+  top: auto !important;
+  bottom: 0;
+  transition: bottom 80ms linear;
+}
+#inside_holder[device="2"] #insideChatFrame.notificationMode {
+  bottom: calc(var(--inside-bottom-offset));
+}
+#inside_holder[device="2"] #inside_tabs {
+  bottom: calc(var(--inside-bottom-offset) + 10px);
+  right: 10px !important;
+}
+#inside_holder.showChatPaneFullScreen.chatPaneOpen.prechat #insideChatFrame {
+  min-height: var(--inside-viewport-height, 100vh);
+}

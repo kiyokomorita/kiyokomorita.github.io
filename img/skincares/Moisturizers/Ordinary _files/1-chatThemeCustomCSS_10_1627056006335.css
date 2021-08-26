@@ -1,0 +1,22 @@
+.chatNotification, .chatNotifText, .chatNotifTitle {
+ color: white !important;
+}
+
+.chatNotification {
+ background: #000000;
+}
+
+.chatNotifNumber {
+ font-family: Helvetica, 'Nunito Sans', sans-serif !important;
+ font-size: 14px;
+ top: 50px;
+}
+
+.chatNotification .closeButton {
+ display: flex;
+ right: 0;
+ top: 0;
+ background: none;
+ border: none;
+ color: white !important;
+}

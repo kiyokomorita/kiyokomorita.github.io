@@ -10,6 +10,34 @@
 
 
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* #home > div { */
+        /* font-family:cursive;
+        color: aliceblue;
+      } */
+      /* width: 500px;
+     text-align: start;
+    } */
+    #home > div > div{
+      /* font-style: italic; */
+      font-family:'Times New Roman', Times, serif;
+      width: 300px;
+      color: aliceblue;
+    }
+      .top-text{
+        font-style: italic;
+        font-family:monospace;
+        font-weight: 200;
+        color: aliceblue;
+      }
+      /* .top-textp{
+        
+        font-family:cursive;
+        font-weight: 200;
+        color: aliceblue;
+        
+      } */ */
+    </style>
 </head>
 
 <body>
@@ -63,10 +91,10 @@ console.log(db)
             <ul class="navbar-nav ml-auto">
               
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="shop.html">Shop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -85,11 +113,15 @@ console.log(db)
 
       <section id="home">
           <div class="container">
-              <h5>NEW ARRIVALS</h5>
-              <h1><span>Best Price</span>This Year</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur<br>adipisicing elit. Eaque, reiciendis!</p>
+            <div class="text-wrapper">
+              
+              <h1 class="top-text">Find your Dream Hydration</h1>
+              <p class="top-textp">Our Vitamin C Serum contains Hyaluronic Acid Serum & other powerful botanicals, while our Hyaluronic Acid Serum is made with simple ingredients (perfect for sensitive skin!) </p>
               <button>Shop Now</button>
+            </div>
+            </div>
           </div>
+        
       </section>
       <section id="brand" class="container">
         <div class="row md-0 py-5　d-flex align-items-center">
@@ -104,37 +136,34 @@ console.log(db)
       </section>
     
       <section id="new" class="w-100">
-
+        
           <div class="row p-0 m-0">
 
-              <div class="one col-lg-4 col-md-12 col-12 p-0">
+              <div class="one col-lg-6 col-md-12 col-12 p-0">
                 <img class="img-fluid" src="img/new/1.jpg" alt="">
                 <div class="details">
-                      <h2>Rare Item</h2>
+                      <h2 class="text-uppercase">Beauty Offers</h2>
+                      <h4>Don't wait - these exclusive deals won't last. </h4>
                      <button class="text-uppercase">Shop now</button>
                 </div>
               </div>
 
-              <div class="one col-lg-4 col-md-12 col-12 p-0">
+              <div class="one col-lg-6 col-md-12 col-12 p-0">
                  <img class="img-fluid" src="img/new/2.jpg" alt="">
                 <div class="details">
-                      <h2>Rare Item</h2>
-                      <button class="text-uppercase">Shop now</button>
-                </div>
-              </div>
-              <div class="one col-lg-4 col-md-12 col-12 p-0">
-                  <img class="img-fluid" src="img/new/3.jpg" alt="">
-                <div class="details">
-                      <h2>Rare Item</h2>
+                      <h2 class="text-uppercase">New Item Beauty</h2>
+                      <h4>Skincare and makeup from Addison Rae.</h4>
                       <button class="text-uppercase">Shop now</button>
                 </div>
               </div>
               
+              </div>
+            
           
       </section>
-<section id="featured" class="my-5 pb-5">
+<section id="new-arrival" class="my-5 pb-5">
   <div class="container text-center mt-5 py-5">
-    <h3>featured</h3>
+    <h3>New Arrivals</h3>
     <hr class="mx-auto">
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
@@ -148,13 +177,14 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
+      <h5 class="p-brand">The Ordinary</h5>
       <h5 class="p-name">Squalane Cleanser</h5>
       <h4 class="p-price">$7.90</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
     <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <img class="img-fluid mb-3" src="img/skincares/Moisturizers/kiehl.webp" alt="">
       <div class="star">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -162,14 +192,15 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">Kiehl's</h5>
+      <h5 class="p-name">Ultra Facial Moisturizing Cream</h5>
+      <h4 class="p-price">$40.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <img class="img-fluid mb-3" src="img/makeup/cheek/NARS.webp" alt="">
       <div class="star">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -177,14 +208,15 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">NARS</h5>
+      <h5 class="p-name">Liquid Blush</h5>
+      <h4 class="p-price">$39.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+      <img class="img-fluid mb-3" src="img/makeup/lip/MAClip.jpeg" alt="">
       <div class="star">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -192,8 +224,9 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">MAC Cosmetics</h5>
+      <h5 class="p-name">Matte Lipstick</h5>
+      <h4 class="p-price">$25.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
@@ -225,8 +258,9 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">CLINIQUE</h5>
+      <h5 class="p-name">All About Clean™ Liquid Facial Soap</h5>
+      <h4 class="p-price">$26.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
@@ -239,8 +273,9 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">Estée Lauder</h5>
+      <h5 class="p-name">Advanced Night Repair Eye Supercharged Complex</h5>
+      <h4 class="p-price">$87.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
@@ -254,8 +289,9 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">ILIA</h5>
+      <h5 class="p-name">Limitless Lash Lengthening Mascara</h5>
+      <h4 class="p-price">$37.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
@@ -269,8 +305,9 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
+      <h5 class="p-brand">Lar Mer</h5>
+      <h5 class="p-name">Crème de la Mer Moisturizer</h5>
+      <h4 class="p-price">$255.00</h4>
       <button class="buy-btn">Buy Now</button>
 
     </div>
@@ -278,7 +315,9 @@ console.log(db)
   </div>
 </section>
   <footer class="mt-5 py-5">
+  <!-- <footer> -->
     <div class="row container mx-auto pt-5">
+      <!-- <div class="row container"> -->
       <div class="footer-one col-lg-3 col-md-6 col-12">
         <img src="img/logo.png" alt="" width="100px" height="auto">
         <p>Lorem ipsum dolor sit amet.</p>
@@ -328,7 +367,7 @@ console.log(db)
       </div>
 
 
-      <div class="copyright mx-auto">
+      <div class="copyright mx-auto my-5">
        
             <p>Kiyoko eCommerce &copy; 2021. All Rights Reserved</p>
           
