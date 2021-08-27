@@ -47,11 +47,12 @@ button{
     text-transform: uppercase;
     transition: 0.3s ease;
 }
+
 button:hover{
     background-color: black;
 }
 hr{
-    width: 30px;
+    width: 100px;
     height:2px;
     background-color: orange;
 }
@@ -178,9 +179,11 @@ hr{
 #new .one:nth-child(1) .details{
     display:flex;
     justify-content:center;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
+    flex-direction:column;
+    align-items: center;
+    text-align:center;
+    
+    
 
 }
 

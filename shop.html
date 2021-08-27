@@ -11,12 +11,42 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
+        #new-arrival > div.row.mx-auto.container-fluid >div> a{
+  
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline:none;
+  border:none;
+  background-color: #fb77fb;;
+  color:aliceblue;
+  padding: 13px 30px;
+  cursor:pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  
+  
+}
+#popular > div.row.mx-auto.container-fluid > div:nth-child(n) > a{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline:none;
+  border:none;
+  background-color: #fb77fb;;
+  color:aliceblue;
+  padding: 13px 30px;
+  cursor:pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  
+}
+
         .product img{
             width: 100%;
             height: auto;
             box-sizing: border-box;
             object-fit: covers;
         }
+
     </style>
 </head>
 <body>
@@ -34,13 +64,13 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link active" href="#">Shop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
               <li class="nav-item">
                 <i class="fal fa-search"></i>
@@ -51,249 +81,7 @@
         </div>
       </nav>
     
-      <!-- <section id="featured" class="my-5 py-5">
-        <div class="container mt-5 py-5">
-          <h2 class="font-weight-bold">Items</h2>
-          <hr>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="row mx-auto container">
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
       
-          </div>
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-        </div>
       </section> -->
       <section id="new-arrival" class="my-5 pb-5">
         <div class="container text-center mt-5 py-5">
@@ -301,7 +89,7 @@
           <hr class="mx-auto">
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="row mx-auto container-fluid">
+        <div class="row mx-auto container-fluid d-flex align-items-end">
           <div class="product text-center col-lg-3 col-md-4 col-12">
             <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
             <div class="star">
@@ -314,9 +102,41 @@
             <h5 class="p-brand">The Ordinary</h5>
             <h5 class="p-name">Squalane Cleanser</h5>
             <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
+            <a href="ordinaryclean.html" class="buy-btn">Buy Now</a>
       
           </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/skincares/cleansers/clinique.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-brand">CLINIQUE</h5>
+            <h5 class="p-name">All About Clean™ Liquid Facial Soap</h5>
+            <h4 class="p-price">$26.00</h4>
+            <a href="clinique.html" class="buy-btn">Buy Now</a>
+      
+          </div>
+      
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/skincares/cleansers/SKII.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-brand">SK-II</h5>
+            <h5 class="p-name">Facial Treatment Cleanser</h5>
+            <h4 class="p-price">$99.00</h4>
+            <a href="sk2clean.html" class="buy-btn">Buy Now</a>
+      
+          </div>
+      
           <div class="product text-center col-lg-3 col-md-4 col-12">
             <img class="img-fluid mb-3" src="img/skincares/Moisturizers/kiehl.webp" alt="">
             <div class="star">
@@ -329,39 +149,7 @@
             <h5 class="p-brand">Kiehl's</h5>
             <h5 class="p-name">Ultra Facial Moisturizing Cream</h5>
             <h4 class="p-price">$40.00</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/makeup/cheek/NARS.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-brand">NARS</h5>
-            <h5 class="p-name">Liquid Blush</h5>
-            <h4 class="p-price">$39.00</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/makeup/lip/MAClip.jpeg" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-brand">MAC Cosmetics</h5>
-            <h5 class="p-name">Matte Lipstick</h5>
-            <h4 class="p-price">$25.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <a href="kiehls.html" class="buy-btn">Buy Now</a>
       
           </div>
       
@@ -373,9 +161,9 @@
           <hr class="mx-auto"> -->
           <!-- <p>Lorem ipsum dolor sit amet.</p> -->
         </div>
-        <div class="row mx-auto container-fluid">
+        <div class="row mx-auto container-fluid d-flex align-items-end">
           <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+            <img class="img-fluid mb-3" src="img/skincares/Moisturizers/lamercreme.webp" alt="">
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -383,14 +171,14 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h5 class="p-brand">The Ordinary</h5>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
+            <h5 class="p-brand">Lar Mer</h5>
+            <h5 class="p-name">Crème de la Mer Moisturizer</h5>
+            <h4 class="p-price">$255.00</h4>
+            <a href="lamer.html" class="buy-btn">Buy Now</a>
       
           </div>
           <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/skincares/Moisturizers/kiehl.webp" alt="">
+            <img class="img-fluid mb-3" src="img/skincares/Moisturizers/SKIItreat.webp" alt="">
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -398,31 +186,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h5 class="p-brand">Kiehl's</h5>
-            <h5 class="p-name">Ultra Facial Moisturizing Cream</h5>
-            <h4 class="p-price">$40.00</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/makeup/cheek/NARS.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-brand">NARS</h5>
-            <h5 class="p-name">Liquid Blush</h5>
-            <h4 class="p-price">$39.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <h5 class="p-brand">SK-II</h5>
+            <h5 class="p-name">Facial Treatment Essence (Pitera Essence)</h5>
+            <h4 class="p-price">$241.00</h4>
+            <a href="sk2treat.html" class="buy-btn">Buy Now</a>
       
           </div>
       
           <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/makeup/lip/MAClip.jpeg" alt="">
+            <img class="img-fluid mb-3" src="img/skincares/eyecare/lancome.jpeg" alt="">
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -430,55 +202,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h5 class="p-brand">MAC Cosmetics</h5>
-            <h5 class="p-name">Matte Lipstick</h5>
-            <h4 class="p-price">$25.00</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-        </div>
-      </section>
-      <section id="new-arrival" class="my-5 pb-5">
-        <div class="container text-center mt-5 py-5">
-          <!-- <h3>New Arrivals</h3>
-          <hr class="mx-auto">
-          <p>Lorem ipsum dolor sit amet.</p> -->
-        </div>
-        <div class="row mx-auto container-fluid">
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-brand">The Ordinary</h5>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/skincares/Moisturizers/kiehl.webp" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-brand">Kiehl's</h5>
-            <h5 class="p-name">Ultra Facial Moisturizing Cream</h5>
-            <h4 class="p-price">$40.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <h5 class="p-brand">Lancôme</h5>
+            <h5 class="p-name">Absolute Revitilizing Eye Cream</h5>
+            <h4 class="p-price">$164.00</h4>
+            <a href="lancome.html" class="buy-btn">Buy Now</a>
       
           </div>
       
           <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/makeup/cheek/NARS.webp" alt="">
+            <img class="img-fluid mb-3" src="img/skincares/eyecare/estee.webp" alt="">
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -486,26 +218,10 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h5 class="p-brand">NARS</h5>
-            <h5 class="p-name">Liquid Blush</h5>
-            <h4 class="p-price">$39.00</h4>
-            <button class="buy-btn">Buy Now</button>
-      
-          </div>
-      
-          <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/makeup/lip/MAClip.jpeg" alt="">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h5 class="p-brand">MAC Cosmetics</h5>
-            <h5 class="p-name">Matte Lipstick</h5>
-            <h4 class="p-price">$25.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <h5 class="p-brand">Estée Lauder</h5>
+            <h5 class="p-name">Advanced Night Repair Eye Supercharged Complex</h5>
+            <h4 class="p-price">$87.00</h4>
+            <a href="esteelauder.html"  class="buy-btn">Buy Now</a>
       
           </div>
       
@@ -517,9 +233,9 @@
           <hr class="mx-auto">
           <p>Lorem ipsum dolor sit amet.</p> -->
         </div>
-        <div class="row mx-auto container-fluid">
+        <div class="row mx-auto container-fluid d-flex align-items-end">
           <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/featured/ordinary.webp" alt="">
+            <img class="img-fluid mb-3" src="img/makeup/foundation/NARS.webp" alt="">
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -527,14 +243,14 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h5 class="p-brand">The Ordinary</h5>
-            <h5 class="p-name">Squalane Cleanser</h5>
-            <h4 class="p-price">$7.90</h4>
-            <button class="buy-btn">Buy Now</button>
+            <h5 class="p-brand">NARS</h5>
+            <h5 class="p-name">Natural Radiant Longwear Foundation</h5>
+            <h4 class="p-price">$63.00</h4>
+            <a href="narsfd.html" class="buy-btn">Buy Now</a>
       
           </div>
           <div class="product text-center col-lg-3 col-md-4 col-12">
-            <img class="img-fluid mb-3" src="img/skincares/Moisturizers/kiehl.webp" alt="">
+            <img class="img-fluid mb-3" src="img/makeup/foundation/bobbi.webp" alt="">
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -542,10 +258,82 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h5 class="p-brand">Kiehl's</h5>
-            <h5 class="p-name">Ultra Facial Moisturizing Cream</h5>
+            <h5 class="p-brand">Bobbi Brown</h5>
+            <h5 class="p-name">Skin Long-Wear Weightless Foundation SPF 15</h5>
+            <h4 class="p-price">$62.00</h4>
+            <a href="bobbi.html" class="buy-btn">Buy Now</a>
+      
+          </div>
+      
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/makeup/foundation/clinique.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-brand">CLINIQUE</h5>
+            <h5 class="p-name">Even Better™ Makeup Broad Spectrum SPF 15 Foundation</h5>
             <h4 class="p-price">$40.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <a href="cliniquefd.html" class="buy-btn">Buy Now</a>
+      
+          </div>
+      
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/popular/ilialash.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-brand">ILIA</h5>
+            <h5 class="p-name">Limitless Lash Lengthening Mascara</h5>
+            <h4 class="p-price">$37.00</h4>
+            <a href="ilia.html" class="buy-btn">Buy Now</a>
+      
+          </div>
+      
+        </div>
+      </section>
+      <section id="new-arrival" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+          <!-- <h3>New Arrivals</h3>
+          <hr class="mx-auto">
+          <p>Lorem ipsum dolor sit amet.</p> -->
+        </div>
+        <div class="row mx-auto container-fluid d-flex align-items-end">
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/makeup/eyeshadow/urban.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-brand">Urban Decay</h5>
+            <h5 class="p-name">Let's Go Crazy Eyeshadow Palette - Prince Collection</h5>
+            <h4 class="p-price">$72.00</h4>
+            <a href="urban.html" class="buy-btn">Buy Now</a>
+      
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/makeup/eyeshadow/mac.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-brand">MAC Cosmetics</h5>
+            <h5 class="p-name">Eye Shadow</h5>
+            <h4 class="p-price">$22.00</h4>
+            <a href="maceye.html" class="buy-btn">Buy Now</a>
       
           </div>
       
@@ -561,7 +349,7 @@
             <h5 class="p-brand">NARS</h5>
             <h5 class="p-name">Liquid Blush</h5>
             <h4 class="p-price">$39.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <a href="nars.html" class="buy-btn">Buy Now</a>
       
           </div>
       
@@ -577,7 +365,7 @@
             <h5 class="p-brand">MAC Cosmetics</h5>
             <h5 class="p-name">Matte Lipstick</h5>
             <h4 class="p-price">$25.00</h4>
-            <button class="buy-btn">Buy Now</button>
+            <a href="maclip.html"class="buy-btn">Buy Now</a>
       
           </div>
       

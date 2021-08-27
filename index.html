@@ -11,13 +11,7 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-      /* #home > div { */
-        /* font-family:cursive;
-        color: aliceblue;
-      } */
-      /* width: 500px;
-     text-align: start;
-    } */
+    
     #home > div > div{
       /* font-style: italic; */
       font-family:'Times New Roman', Times, serif;
@@ -30,55 +24,49 @@
         font-weight: 200;
         color: aliceblue;
       }
-      /* .top-textp{
-        
-        font-family:cursive;
-        font-weight: 200;
-        color: aliceblue;
-        
-      } */ */
+      /* #new-arrival > div.row.mx-auto.container-fluid >div:nth-child(1)> a{ */
+       
+        #new-arrival > div.row.mx-auto.container-fluid >div> a{
+  
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline:none;
+    border:none;
+    background-color: #fb77fb;;
+    color:aliceblue;
+    padding: 13px 30px;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    
+    
+  }
+  #popular > div.row.mx-auto.container-fluid{
+
+  }
+  #popular > div.row.mx-auto.container-fluid > div:nth-child(n) > a{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline:none;
+    border:none;
+    background-color: #fb77fb;;
+    color:aliceblue;
+    padding: 13px 30px;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    
+  }
+
+  /* #popular > div.row.mx-auto.container-fluid > div:nth-child(4) > a:nth-child(1) > h4,h5{
+    color: black; */
+  }
+
     </style>
 </head>
 
 <body>
-    <!-- <script>
-        let db = {
-    0:{
-        title:"Baby Lotion",
-        Description:"Lovely Baby Lotion",
-        Price:5,
-        serialNo:123,
-        img:"https://www.sephora.com/productimages/sku/s2489755-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=194"
-
-    },
-    1:{
-        title:"Baby Lotion",
-        Description:"Lovely Baby Lotion",
-        Price:5,
-        serialNo:123
-
-    },
-    2:{
-        title:"Baby Lotion",
-        Description:"Lovely Baby Lotion",
-        Price:5,
-        serialNo:123
-
-    },
-    3:{
-        title:"Baby Lotion",
-        Description:"Lovely Baby Lotion",
-        Price:5,
-        serialNo:123
-
-    }
-
-
-}
-console.log(db)
-    </script> -->
-
-
+ 
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
@@ -100,7 +88,7 @@ console.log(db)
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
               <li class="nav-item">
                 <i class="fal fa-search"></i>
@@ -117,7 +105,7 @@ console.log(db)
               
               <h1 class="top-text">Find your Dream Hydration</h1>
               <p class="top-textp">Our Vitamin C Serum contains Hyaluronic Acid Serum & other powerful botanicals, while our Hyaluronic Acid Serum is made with simple ingredients (perfect for sensitive skin!) </p>
-              <button>Shop Now</button>
+              <button onclick="location.href='shop.html'">Shop Now</button>
             </div>
             </div>
           </div>
@@ -140,11 +128,11 @@ console.log(db)
           <div class="row p-0 m-0">
 
               <div class="one col-lg-6 col-md-12 col-12 p-0">
-                <img class="img-fluid" src="img/new/1.jpg" alt="">
+                <img class="img-fluid" src="img/new/laura-chouette-IMWmOmgP7kQ-unsplash.jpg" alt="">
                 <div class="details">
                       <h2 class="text-uppercase">Beauty Offers</h2>
                       <h4>Don't wait - these exclusive deals won't last. </h4>
-                     <button class="text-uppercase">Shop now</button>
+                     <button onclick="location.href='shop.html'"class="text-uppercase">Shop now</button>
                 </div>
               </div>
 
@@ -153,7 +141,7 @@ console.log(db)
                 <div class="details">
                       <h2 class="text-uppercase">New Item Beauty</h2>
                       <h4>Skincare and makeup from Addison Rae.</h4>
-                      <button class="text-uppercase">Shop now</button>
+                      <button onclick="location.href='shop.html'"class="text-uppercase">Shop now</button>
                 </div>
               </div>
               
@@ -179,8 +167,9 @@ console.log(db)
       </div>
       <h5 class="p-brand">The Ordinary</h5>
       <h5 class="p-name">Squalane Cleanser</h5>
-      <h4 class="p-price">$7.90</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$7.90</h4>
+      <!-- <button class="buy-btn">Buy Now</button> -->
+      <a href="ordinaryclean.html" class="buy-btn">Buy Now</a>
 
     </div>
     <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -194,8 +183,8 @@ console.log(db)
       </div>
       <h5 class="p-brand">Kiehl's</h5>
       <h5 class="p-name">Ultra Facial Moisturizing Cream</h5>
-      <h4 class="p-price">$40.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$40.00</h4>
+      <a href="kiehls.html" class="buy-btn">Buy Now</a>
 
     </div>
 
@@ -210,8 +199,8 @@ console.log(db)
       </div>
       <h5 class="p-brand">NARS</h5>
       <h5 class="p-name">Liquid Blush</h5>
-      <h4 class="p-price">$39.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$39.00</h4>
+      <a href="nars.html" class="buy-btn">Buy Now</a>
 
     </div>
 
@@ -226,8 +215,8 @@ console.log(db)
       </div>
       <h5 class="p-brand">MAC Cosmetics</h5>
       <h5 class="p-name">Matte Lipstick</h5>
-      <h4 class="p-price">$25.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$25.00</h4>
+      <a href="maclip.html"class="buy-btn">Buy Now</a>
 
     </div>
 
@@ -238,7 +227,7 @@ console.log(db)
   <div class="">
     <h4>SALE</h4>
     <h1>Autumn Collection</h1>
-    <button class="text-uppercase">Shop Now</button>
+    <button onclick="location.href='shop.html'"class="text-uppercase">Shop Now</button>
   </div>
 </section>
 
@@ -248,7 +237,8 @@ console.log(db)
     <hr class="mx-auto">
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
-  <div class="row mx-auto container-fluid">
+  <!-- align items of the bottom  -->
+  <div class="row mx-auto container-fluid d-flex align-items-end">
     <div class="product text-center col-lg-3 col-md-4 col-12">
       <img class="img-fluid mb-3" src="img/popular/qlinique_clean.webp" alt="">
       <div class="star">
@@ -260,8 +250,8 @@ console.log(db)
       </div>
       <h5 class="p-brand">CLINIQUE</h5>
       <h5 class="p-name">All About Clean™ Liquid Facial Soap</h5>
-      <h4 class="p-price">$26.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$26.00</h4>
+      <a href="clinique.html" class="buy-btn">Buy Now</a>
 
     </div>
     <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -275,11 +265,10 @@ console.log(db)
       </div>
       <h5 class="p-brand">Estée Lauder</h5>
       <h5 class="p-name">Advanced Night Repair Eye Supercharged Complex</h5>
-      <h4 class="p-price">$87.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$87.00</h4>
+      <a href="esteelauder.html" class="buy-btn">Buy Now</a>
 
     </div>
-
     <div class="product text-center col-lg-3 col-md-4 col-12">
       <img class="img-fluid mb-3" src="img/popular/ilialash.webp" alt="">
       <div class="star">
@@ -289,15 +278,15 @@ console.log(db)
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <h5 class="p-brand">ILIA</h5>
+     
+      <h5 class="p-brand" color="black">ILIA</h5>
       <h5 class="p-name">Limitless Lash Lengthening Mascara</h5>
-      <h4 class="p-price">$37.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$37.00</h4>
+      <a href="ilia.html" class="buy-btn">Buy Now</a>
 
     </div>
-
     <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="img-fluid mb-3" src="img/popular/lamercreme.webp" alt="">
+      <img class="img-fluid mb-3" src="img/skincares/Moisturizers/lamer.webp" alt="">
       <div class="star">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -307,10 +296,14 @@ console.log(db)
       </div>
       <h5 class="p-brand">Lar Mer</h5>
       <h5 class="p-name">Crème de la Mer Moisturizer</h5>
-      <h4 class="p-price">$255.00</h4>
-      <button class="buy-btn">Buy Now</button>
+      <h4 class="p-price mb-3">$255.00</h4>
+      <a href="lamer.html" class="buy-btn">Buy Now</a>
 
     </div>
+    
+    
+  
+   
 
   </div>
 </section>
